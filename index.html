@@ -268,6 +268,46 @@
             margin-left: 8px;
         }
 
+        /* COIN BADGE */
+        .coin-badge {
+            display: inline-block;
+            background: rgba(241, 196, 15, 0.15);
+            color: #f1c40f;
+            border: 1px solid rgba(241, 196, 15, 0.3);
+            font-size: 0.7em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        /* COST BADGE */
+        .cost-badge {
+            display: inline-block;
+            background: rgba(231, 76, 60, 0.12);
+            color: #e74c3c;
+            border: 1px solid rgba(231, 76, 60, 0.25);
+            font-size: 0.75em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        /* RARITY COLORS for skin system */
+        .rarity-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 8px;
+        }
+        .rarity-tag {
+            font-size: 0.72em;
+            padding: 2px 7px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
         /* FOOTER */
         footer {
             text-align: center;
@@ -434,6 +474,255 @@
             <div class="command-desc">Postet den Link zu dieser Seite mit allen Commands.</div>
             <div class="command-example">!commands</div>
             <div class="command-cooldown">⏱ 30s Cooldown</div>
+        </div>
+
+    </div>
+
+    <div class="section-title">🎭 Fun & Spaß</div>
+    <div class="commands-grid">
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">👻</div>
+                <div>
+                    <div class="command-name">!lurk</div>
+                </div>
+            </div>
+            <div class="command-desc">Aktiviert den Lurk-Modus – du bist still dabei ohne zu schreiben. Der Bot begrüßt dich automatisch wenn du zurückkommst!</div>
+            <div class="command-example">!lurk</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">👋</div>
+                <div>
+                    <div class="command-name">!unlurk</div>
+                </div>
+            </div>
+            <div class="command-desc">Manuell aus dem Lurk zurückmelden. Der Bot zeigt wie lange du weg warst.</div>
+            <div class="command-example">!unlurk</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">✂️</div>
+                <div>
+                    <div class="command-name">!clip</div>
+                </div>
+            </div>
+            <div class="command-desc">Erstellt sofort einen Twitch Clip vom aktuellen Stream-Moment.</div>
+            <div class="command-example">!clip</div>
+            <div class="command-cooldown">⏱ 30s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🎲</div>
+                <div>
+                    <div class="command-name">!würfel</div>
+                </div>
+            </div>
+            <div class="command-desc">Würfelt einen W6 (Standard) oder einen beliebigen Würfel. Bei Höchstzahl gibt's einen besonderen Kommentar!</div>
+            <div class="command-example">!würfel · !würfel 20</div>
+            <div class="command-cooldown">⏱ 5s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🔫</div>
+                <div>
+                    <div class="command-name">!roulette</div>
+                </div>
+            </div>
+            <div class="command-desc">Russisch Roulette! 1 von 6 Kammern ist geladen – wer erwischt wird, fliegt für 60 Sekunden raus. Glück gehabt?</div>
+            <div class="command-example">!roulette</div>
+            <div class="command-cooldown">⏱ 10s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🤗</div>
+                <div>
+                    <div class="command-name">!hug</div>
+                </div>
+            </div>
+            <div class="command-desc">Schick jemandem eine Umarmung! Ohne Ziel umarmt man den ganzen Chat.</div>
+            <div class="command-example">!hug · !hug @username</div>
+            <div class="command-cooldown">⏱ 5s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">💕</div>
+                <div>
+                    <div class="command-name">!love</div>
+                </div>
+            </div>
+            <div class="command-desc">Misst den Liebesprozentsatz zwischen dir und einem anderen User (oder dem Stream). Zufällig von 1–100%!</div>
+            <div class="command-example">!love · !love @username</div>
+            <div class="command-cooldown">⏱ 5s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">👋</div>
+                <div>
+                    <div class="command-name">!slap</div>
+                </div>
+            </div>
+            <div class="command-desc">Schlag jemanden mit einer zufälligen Waffe – Baguette, Gummiente, Käseblock und mehr!</div>
+            <div class="command-example">!slap @username</div>
+            <div class="command-cooldown">⏱ 5s Cooldown</div>
+        </div>
+
+    </div>
+
+    <div class="section-title">🪙 TubeCoins System</div>
+    <div class="commands-grid">
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🪙</div>
+                <div>
+                    <div class="command-name">!coins</div>
+                </div>
+            </div>
+            <div class="command-desc">Zeigt deinen aktuellen TubeCoin-Kontostand. Coins verdienst du automatisch durchs Zuschauen!</div>
+            <div class="command-example">!coins</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">📅</div>
+                <div>
+                    <div class="command-name">!daily</div>
+                </div>
+            </div>
+            <div class="command-desc">Hole dir einmal täglich 50 TubeCoins als Bonus ab. Alle 24 Stunden verfügbar!</div>
+            <div class="command-example">!daily</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">📦</div>
+                <div>
+                    <div class="command-name">!case</div>
+                </div>
+            </div>
+            <div class="command-desc">Öffnet eine virtuelle CS2-Kiste und erhalte einen zufälligen Skin. Von Consumer Grade bis ★ Knife – was kriegt ihr?</div>
+            <div class="command-example">!case</div>
+            <div class="cost-badge">💸 Kostet 2 TubeCoins</div>
+            <div class="rarity-list">
+                <span class="rarity-tag" style="background:rgba(200,200,200,0.1);color:#aaa;">⬜ Consumer</span>
+                <span class="rarity-tag" style="background:rgba(100,180,255,0.1);color:#6fbfff;">🩵 Industrial</span>
+                <span class="rarity-tag" style="background:rgba(50,100,255,0.12);color:#5577ff;">🔵 Mil-Spec</span>
+                <span class="rarity-tag" style="background:rgba(160,50,255,0.12);color:#c060ff;">🟣 Restricted</span>
+                <span class="rarity-tag" style="background:rgba(255,80,150,0.12);color:#ff60aa;">🩷 Classified</span>
+                <span class="rarity-tag" style="background:rgba(255,60,60,0.12);color:#ff5555;">🔴 Covert</span>
+                <span class="rarity-tag" style="background:rgba(255,200,0,0.12);color:#f1c40f;">🟡 ★ Knife</span>
+            </div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🎒</div>
+                <div>
+                    <div class="command-name">!inv</div>
+                </div>
+            </div>
+            <div class="command-desc">Zeigt deine letzten 5 Skins im virtuellen Inventar.</div>
+            <div class="command-example">!inv</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">💎</div>
+                <div>
+                    <div class="command-name">!invvalue</div>
+                </div>
+            </div>
+            <div class="command-desc">Zeigt den Gesamtwert deines Inventars, deinen besten Skin und dein komplettes Vermögen (Coins + Skins).</div>
+            <div class="command-example">!invvalue</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🎁</div>
+                <div>
+                    <div class="command-name">!give</div>
+                </div>
+            </div>
+            <div class="command-desc">Verschenke TubeCoins an einen anderen User. Mindestbetrag: 1 Coin.</div>
+            <div class="command-example">!give @username 100</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🏆</div>
+                <div>
+                    <div class="command-name">!top</div>
+                </div>
+            </div>
+            <div class="command-desc">Zeigt die Top 5 reichsten Zuschauer nach TubeCoins. Schaffst du Platz 1?</div>
+            <div class="command-example">!top</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🎰</div>
+                <div>
+                    <div class="command-name">!slots</div>
+                </div>
+            </div>
+            <div class="command-desc">Drehe die einarmige Bandit! 3 gleiche Symbole = Gewinn. 🟡🟡🟡 = 20x Jackpot! Maximal 500 Coins setzen.</div>
+            <div class="command-example">!slots 50</div>
+            <div class="command-cooldown">⏱ 10s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🎲</div>
+                <div>
+                    <div class="command-name">!roll</div>
+                </div>
+            </div>
+            <div class="command-desc">Würfelwette mit 6 Ausgängen – von "alles verloren" bis "+150% Gewinn". Maximal 500 Coins setzen.</div>
+            <div class="command-example">!roll 100</div>
+            <div class="command-cooldown">⏱ 10s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">⚔️</div>
+                <div>
+                    <div class="command-name">!duel</div>
+                </div>
+            </div>
+            <div class="command-desc">Fordere einen anderen User zu einem 50/50 Coin-Flip heraus! Der Gewinner bekommt alles.</div>
+            <div class="command-example">!duel @username 200</div>
+            <div class="command-cooldown">⏱ 30s Cooldown</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">⬆️</div>
+                <div>
+                    <div class="command-name">!upgrade</div>
+                </div>
+            </div>
+            <div class="command-desc">Versuche deinen neuesten Skin auf die nächste Rarität aufzuwerten. Bei Misserfolg wird der Skin zerstört – hohes Risiko!</div>
+            <div class="command-example">!upgrade</div>
+        </div>
+
+        <div class="command-card">
+            <div class="command-header">
+                <div class="command-emoji">🏪</div>
+                <div>
+                    <div class="command-name">!sell</div>
+                </div>
+            </div>
+            <div class="command-desc">Verkaufe oder tausche deinen ältesten Skin beim zufälligen NPC-Händler – der taucht nur manchmal auf! Schau nach ob er im Chat angekündigt wurde.</div>
+            <div class="command-example">!sell</div>
         </div>
 
     </div>
